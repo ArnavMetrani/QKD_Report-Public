@@ -1,0 +1,357 @@
+{
+  "name": "T12",
+  "grid": {
+    "width": 13,
+    "height": 10,
+    "pieces": [
+      {
+        "coord": {
+          "x": 0,
+          "y": 0
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "SinglePhotonSource",
+            "active": true,
+            "rotation": 0,
+            "polarization": 0,
+            "phaseShift": 0,
+            "wavelength": "Red"
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 0,
+          "y": 2
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "InputSwitch",
+            "activeState": 0,
+            "randomize": false,
+            "name": "Z-Basis",
+            "states": [
+              "0",
+              "1"
+            ],
+            "probability": 0.5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 0,
+          "y": 4
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "InputSwitch",
+            "activeState": 0,
+            "randomize": false,
+            "name": "X-Basis",
+            "states": [
+              "0",
+              "1"
+            ],
+            "probability": 0.5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 2,
+          "y": 0
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "BeamSplitter",
+            "rotation": 7,
+            "reflectance": 0.5,
+            "reflectionPhase": 0.25
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 2,
+          "y": 2
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Mirror",
+            "rotation": 5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 2,
+          "y": 4
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "Glass",
+            "phaseShift": 0.25
+          },
+          {
+            "type": "Glass",
+            "phaseShift": 0.75
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 3,
+          "y": 0
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "Glass",
+            "phaseShift": 0
+          },
+          {
+            "type": "Glass",
+            "phaseShift": 0.5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 4,
+          "y": 0
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Mirror",
+            "rotation": 5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 4,
+          "y": 2
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "BeamSplitter",
+            "rotation": 7,
+            "reflectance": 0.5,
+            "reflectionPhase": 0.25
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 4,
+          "y": 4
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Mirror",
+            "rotation": 5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 6,
+          "y": 2
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Mirror",
+            "rotation": 5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 6,
+          "y": 4
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "BeamSplitter",
+            "rotation": 5,
+            "reflectance": 0.5,
+            "reflectionPhase": 0.25
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 6,
+          "y": 6
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Mirror",
+            "rotation": 5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 7,
+          "y": 4
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "Glass",
+            "phaseShift": 0
+          },
+          {
+            "type": "Glass",
+            "phaseShift": 0.25
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 8,
+          "y": 4
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Mirror",
+            "rotation": 5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 8,
+          "y": 6
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "BeamSplitter",
+            "rotation": 5,
+            "reflectance": 0.5,
+            "reflectionPhase": 0.25
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 8,
+          "y": 8
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Detector",
+            "rotation": 1,
+            "cartoonStyle": false,
+            "detectAllDirections": false
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 8,
+          "y": 9
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "Comment",
+            "text": "Implies 0",
+            "size": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 9,
+          "y": 1
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "InputSwitch",
+            "activeState": 1,
+            "randomize": false,
+            "name": "B's guess",
+            "states": [
+              "Z",
+              "X"
+            ],
+            "probability": 0.5
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 10,
+          "y": 6
+        },
+        "flags": 3,
+        "states": [
+          {
+            "type": "Detector",
+            "rotation": 2,
+            "cartoonStyle": false,
+            "detectAllDirections": false
+          }
+        ]
+      },
+      {
+        "coord": {
+          "x": 11,
+          "y": 6
+        },
+        "flags": 1,
+        "states": [
+          {
+            "type": "Comment",
+            "text": "Implies 1",
+            "size": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        ]
+      }
+    ],
+    "wires": [
+      {
+        "src": 1,
+        "dst": 6,
+        "dst_input": 0
+      },
+      {
+        "src": 2,
+        "dst": 5,
+        "dst_input": 0
+      },
+      {
+        "src": 18,
+        "dst": 13,
+        "dst_input": 0
+      }
+    ]
+  },
+  "version": "3"
+}
