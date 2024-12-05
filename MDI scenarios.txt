@@ -1,3 +1,6 @@
+The first code block below represents the output states and their probabilities, all the rest that follows is obtained by filtering out the occurances wrt. the state table below.
+
+
 {'1A_0B,0,1A_prime_0B_prime,0': sqrt(2)*I*E_early/2 + sqrt(2)*I*F_early/2,
 '1A_0B,0,1A_prime_0B_prime,pi': sqrt(2)*I*E_early*E_late/4 + sqrt(2)*E_early*F_late/4 + I*E_early/2 - sqrt(2)*E_late*F_early/4 + sqrt(2)*I*F_early*F_late/4 + I*F_early/2,
 '1A_0B,pi,1A_prime_0B_prime,0': sqrt(2)*I*E_early*E_late/4 - sqrt(2)*E_early*F_late/4 + I*E_early/2 + sqrt(2)*E_late*F_early/4 + sqrt(2)*I*F_early*F_late/4 + I*F_early/2,
